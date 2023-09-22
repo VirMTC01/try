@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: url("Background.png");
+    background-image: url("Background Darkened.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-family:Merriweather ;
@@ -14,35 +14,39 @@ main{
     align-items: center;
     /* height: auto; */
     height: 100vh;
-    color: rgb(220, 232, 244);
+    color: rgb(245, 249, 252);
     
 }
 #form-Container{
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    background-color: rgba(25, 5, 65, 0.443);
+    width: 45vw;
+    /* background-color: rgba(209, 197, 234, 0.443); */
     justify-content: center;
     align-items: center;
     padding: 3em;
     margin-top: 8px;
     /* background-image: url("splash.jpeg"); */
     background-size: 100% 100%;
-    border: 2px solid rgb(20, 3, 1);
+    /* border: 2px solid rgb(20, 3, 1); */
     /* box-shadow: 6px 6px 5px rgb(68, 61, 61); */
 
 }
 #form-body{
+    width: 70%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto ;
 
 }
+h2{
+    color: #eee8e4;
+}
 .input-box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 2vw;
+    margin: 2vw 8px;
 }
 label{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -52,14 +56,12 @@ label{
 input{
     width: 14vw;
     height: 3.5vh;
-    margin: 0.5em;
+    margin: 0.5em ;
+    margin-left: 0;
     border:2px solid black;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 17px;
-    box-shadow:
-    inset 0 -3em 3em rgba(120, 115, 115, 0.753),
-    0 0 0 2px rgb(112, 107, 107),
-    0.3em 0.3em 1em rgba(73, 73, 72, 0.89);
+
 }
 #option-box{
     display: flex;
@@ -77,9 +79,10 @@ input{
 input[type="submit"]{
     width: 18vw;
     margin: 2px;
-    background-color: black;
-    color: aliceblue;
+    background-color: #FF5E0C;
+    color:#eee8e4;
    font-family: cursive;
+
 }
 input[type="radio"]{
     width: 10vw;
@@ -88,13 +91,43 @@ input[type="radio"]{
     color:rgb(232, 230, 219);
 } */
 #hd-box{
-    width: 100%;
+    width: 92%;
     height: 15vh;
     opacity: 1.5;
-    background-image: url("Banner.png");
+    background-image: url("Banner (WiE Logo Updated).png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-bottom: 15px;
+}
+.wrap{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s{
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; 
+}
+.s:hover{
+    background-color: #FF5E0C; 
+    box-shadow: 0px 15px 20px rgba(255,94,12,0.4);
+    color: #fff;
+    transform: translateY(-7px);
+
+    
 }
 
 /* responsive */
@@ -135,7 +168,8 @@ input[type="radio"]{
         margin-bottom: 20px;
     }
     h2{
-        font-size:120% ;
+        font-size: 160%;
+        text-align: center;
     }
 }
 @media screen and (min-width:500px) and (max-width:900px) {
@@ -144,7 +178,8 @@ input[type="radio"]{
         margin-top: 10px;
     }
     #form-body{
-
+        width: 108%;
+        justify-content: center;
         margin-top: 8px;
     }
     .input-box{
